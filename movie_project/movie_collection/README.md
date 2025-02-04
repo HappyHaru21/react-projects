@@ -1,8 +1,25 @@
-# React + Vite
+# Movie Collection
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Movie Collection is a React application that allows users to search for movies, view popular movies, and manage their favorite movies. The application uses the [The Movie Database (TMDb) API](https://www.themoviedb.org/documentation/api) to fetch movie data.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Search for movies by title
+- View popular movies
+- Add movies to favorites
+- Remove movies from favorites
+- Persist favorite movies in local storage
+
+
+## Installation
+
+1. Clone the repository:
+
+```sh
+git clone https://github.com/HappyHaru21/react-projects/tree/de63139f61213f1429a588368be07581557004e1/movie_project/movie_collection
+
+cd react-projects/movie_project/movie_collection
+
+npm install
+
+npm run dev
