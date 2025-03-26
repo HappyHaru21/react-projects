@@ -1,0 +1,71 @@
+.tic-tac-toe {
+  text-align: center;
+  padding: 20px;
+  color: #EAEAEA;
+}
+
+.tic-tac-toe h2 {
+  font-size: 2.5rem;
+  color: #A855F7;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #8A2BE2;
+  margin-bottom: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #323844;
+  color: #FFFFFF;
+  font-size: 2.5rem;
+  border: 2px solid #8A2BE2;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cell:hover {
+  background-color: #252932;
+  transform: scale(1.1);
+}
+
+.cell.filled {
+  cursor: not-allowed;
+}
+
+.status {
+  margin: 20px 0;
+  font-size: 1.5rem;
+  color: #A855F7;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #8A2BE2;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #A855F7;
+  transform: scale(1.1);
+}

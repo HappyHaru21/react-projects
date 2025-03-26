@@ -1,0 +1,223 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Theme Variables */
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --header-background-color: #f0f0f0;
+    --header-text-color: #000000;
+    --hero-background-color: #e0e0e0;
+    --hero-text-color: #000000;
+    --button-background-color: #000000;
+    --button-text-color: #ffffff;
+    --button-hover-background-color: #333333;
+    --button-hover-text-color: #ffffff;
+    --footer-background-color: #f0f0f0;
+    --footer-text-color: #000000;
+    --table-background-color: #ffffff;
+    --table-text-color: #000000;
+    --table-header-background-color: #f2f2f2;
+    --table-header-text-color: #333;
+    --table-row-hover-background-color: #ddd;
+}
+
+body.dark-mode {
+    --background-color: #1c1c1c;
+    --text-color: #eaeaea;
+    --header-background-color: #333333;
+    --header-text-color: #eaeaea;
+    --hero-background-color: #444444;
+    --hero-text-color: #eaeaea;
+    --button-background-color: #eaeaea;
+    --button-text-color: #1c1c1c;
+    --button-hover-background-color: #ffffff;
+    --button-hover-text-color: #1c1c1c;
+    --footer-background-color: #333333;
+    --footer-text-color: #eaeaea;
+    --table-background-color: #333333;
+    --table-text-color: #eaeaea;
+    --table-header-background-color: #444444;
+    --table-header-text-color: #eaeaea;
+    --table-row-hover-background-color: #555555;
+}
+
+/* Body and background */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--header-background-color);
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--header-text-color);
+}
+
+header .logo h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--header-text-color);
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffdd00;
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--hero-background-color);
+    color: var(--hero-text-color);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero button:hover {
+    background-color: var(--button-hover-background-color);
+    color: var(--button-hover-text-color);
+}
+
+/* Games Section */
+.games {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.games h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.game-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.game-card {
+    background-color: var(--background-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.game-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.game-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.game-card p {
+    font-size: 16px;
+    color: #777;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: var(--footer-background-color);
+    padding: 10px 0;
+    color: var(--footer-text-color);
+    font-size: 14px;
+    margin-top: auto;
+}
+
+/* Leaderboard Styles */
+.leaderboard {
+    padding: 2rem;
+    text-align: center;
+}
+
+.leaderboard-table {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: var(--table-background-color);
+    color: var(--table-text-color);
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.leaderboard-table th {
+    background-color: var(--table-header-background-color);
+    color: var(--table-header-text-color);
+}
+
+.leaderboard-table tr:nth-child(even) {
+    background-color: var(--table-background-color);
+}
+
+.leaderboard-table tr:hover {
+    background-color: var(--table-row-hover-background-color);
+}
